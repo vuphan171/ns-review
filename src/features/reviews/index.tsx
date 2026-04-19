@@ -1,9 +1,7 @@
-import { ConfigDrawer } from '@/components/config-drawer'
 import { Header } from '@/components/layout/header'
 import { Main } from '@/components/layout/main'
-import { ProfileDropdown } from '@/components/profile-dropdown'
-import { Search } from '@/components/search'
-import { ThemeSwitch } from '@/components/theme-switch'
+import ReviewOperations from '@/components/review-operations'
+import SyncRefreshActions from '@/components/sync-refresh-actions'
 import ReviewFilter from './components/review-filter'
 import ReviewList from './components/review-list'
 import ReviewSummary from './components/review-summary'
@@ -13,12 +11,9 @@ export function Reviews() {
   return (
     <>
       <Header fixed>
-        <Search className='me-auto' />
-        <ThemeSwitch />
-        <ConfigDrawer />
-        <ProfileDropdown />
+        <ReviewOperations className='me-auto' />
+        <SyncRefreshActions />
       </Header>
-
       <Main fluid className='flex flex-1 flex-col gap-4 bg-slate-50 sm:gap-6'>
         <div className='flex flex-wrap items-end justify-between gap-2'>
           <div>
