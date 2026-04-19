@@ -19,7 +19,7 @@ export function Reviews() {
         <ProfileDropdown />
       </Header>
 
-      <Main fluid className='flex flex-1 flex-col gap-4 sm:gap-6'>
+      <Main fluid className='flex flex-1 flex-col gap-4 bg-slate-50 sm:gap-6'>
         <div className='flex flex-wrap items-end justify-between gap-2'>
           <div>
             <h2 className='text-2xl font-bold tracking-tight'>All Reviews</h2>
@@ -29,8 +29,8 @@ export function Reviews() {
             </p>
           </div>
         </div>
-        <div className='flex gap-x-4'>
-          <div>
+        <div className='grid items-start gap-4 xl:grid-cols-[1fr_450px]'>
+          <div className='flex min-w-0 flex-1 flex-col gap-y-6'>
             <ReviewFilter />
             <ReviewSummary />
             <ReviewList />
